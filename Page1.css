@@ -10,7 +10,7 @@
 
 .header {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/travel_map_compass_123078_1920x1080.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("./images/travel_map_compass_123078_1920x1080.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
