@@ -162,6 +162,18 @@ nav {
     .nav-links ul :hover {
         color: black;
     }
+    nav .fa-bars {
+        margin-top: -300px;
+    }
+    /*if height is less than 700px*/
+    @media (max-height: 700px) {
+        h1 {
+            font-size: 8vw;
+        }
+        .Text-box p {
+            font-size: 4.5vw;
+        }
+    }
 }
 
 @media (min-width: 701px) {
