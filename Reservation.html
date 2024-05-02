@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="ReservationStyle.css">
+    <title>Résérvataion -Taous Agency</title>
+
+    <!-- Script Calling-->
+    <script src="sliding.js" defer></script>
+</head>
+
+<body>
+    <section class="header">
+        <h1 id="header_text">Agence Taous</h1>
+        <nav>
+            <a href="./HomePage1.html">
+                <img src="./images/LOGO-FINAL-_1_.jpg" alt="Agency Logo" id="img_logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./HomePage1.html">Accueil</a></li>
+                    <li><a href="./Reservation.html" target="_blank">Réservation en ligne</a></li>
+                    <li><a href="./contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="form_Section">
+        <h2>Remplissz ce formulaire pour nous contactez</h2>
+        <form>
+            <div class="divForm">
+                <label for="ffamilyname">Nom de famille:</label></br>
+                <input type="Text" id="ffamilyname" name="ffamilyname"></br>
+                <label for="fname">Nom:</label></br>
+                <input type="Text" id="fnom" name="fnom"></br>
+                <label for="femail">Email:</label></br>
+                <input type="email" id="femail" name="femail" required></br>
+                <label for="fchoix">What you need</label></br>
+                <label for="fcomplaints">Dites-nous quoi vous auriez besoin</label>
+                <textarea maxlength="500"></textarea>
+            </div>
+
+        </form>
+    </section>
+    <footer>
+        <p>Developed by Lalaibia Aimen</p>
+        <p>aimenLalaibia0@gmail.com</p>
+        <p><i class="fa fa-copyright"></i> 2023 All rights reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
