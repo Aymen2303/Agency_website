@@ -156,6 +156,47 @@ nav {
 }
 
 
+/******* Formular ***********/
+
+h2 {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.form_Section {
+    text-align: center;
+    color: rgba(4, 9, 30, 0.7);
+}
+
+.divForm {
+    border: 2px solid #f44336;
+    justify-content: space-evenly;
+    display: inline-block;
+    /* Ensures the border wraps the content properly */
+    padding: 2vw;
+    /* Adds padding inside the border */
+    border-radius: 8px;
+}
+
+.divForm label {
+    display: block;
+    margin-bottom: 0.5vw;
+    /* Adds a small space below each label */
+}
+
+.divForm input,
+.divForm select,
+.divForm textarea {
+    margin-bottom: 2vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.divForm textarea {
+    height: 100px;
+}
+
+
 /*******Footer******/
 
 footer {
@@ -163,12 +204,10 @@ footer {
     width: auto;
     background-color: rgba(4, 9, 30, 0.7);
     padding: 20px 0;
-    /* Add padding for spacing */
 }
 
 footer p {
     margin: 10px 0;
-    /* Adjust vertical spacing between paragraphs */
     text-align: center;
     font-size: 18px;
     color: #fff;
