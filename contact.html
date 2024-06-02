@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" />
+    <title>Agence Taous- Contact</title>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <!-- Include map.js -->
+    <script src="map.js" defer></script>
+    <!-- Calling script -->
+    <script src="sliding.js" defer></script>
+
+
+</head>
+
+<body>
+    <section class="header">
+        <h1 id="header_text">Agence Taous</h1>
+        <nav>
+            <a href="./HomePage1.html">
+                <img src="./images/LOGO-FINAL-_1_.jpg" alt="Agency Logo" id="img_logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./HomePage1.html">Accueil</a></li>
+                    <li><a href="./Reservation.html" target="_blank">Réservation en ligne</a></li>
+                    <li><a href="./contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="details">
+        <h2>Contactez-nous</h2>
+        <p>Comment pouvons-nous vous aider ?</p>
+    </section>
+
+    <!-- Text and Map Section -->
+    <div class="map-text-container">
+        <div class="text-container">
+            <h2>Notre Location</h2>
+            <p>Nous sommes situés à la Cité 50 villas, à Boghni, Tizi-Ouzou, en Algérie. N'hésitez pas à nous rendre visite pour plus d'informations.</p>
+            <p>Nos horaires d'ouverture sont de 9h à 17h, du lundi au vendredi. Nous sommes impatients de vous rencontrer !</p>
+
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <section class="contacting">
+        <h1>Nous renseignements</h1>
+        <div class="info_box">
+            <div class="infos">
+                <i class="fa fa-phone fa-2x"></i>
+                <h3>Téléphone</h3>
+                <p>026.38.40.25</p>
+            </div>
+            <div class="infos">
+                <i class="fa fa-envelope fa-2x"></i>
+                <h3>E-mail</h3>
+                <p>taousagencytravel@gmail.com</p>
+            </div>
+            <div class="infos">
+                <i class="fa fa-thumbs-up fa-2x"></i>
+                <h3>Nous suivre</h3>
+                <a href="https://www.instagram.com/taous.agency/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Developed by Lalaibia Aimen</p>
+        <p>aimenLalaibia0@gmail.com</p>
+        <p><i class="fa fa-copyright"></i> 2023 All rights reserved</p>
+    </footer>
+</body>
+
+</html>
