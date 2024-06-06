@@ -172,23 +172,35 @@ nav {
 .list-unstyled .media {
     align-items: center;
     transition: background-color 0.5s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.25s ease-out;
+}
+
+.list-unstyled .media:nth-child(2n) {
+    transform: translateX(100%);
+}
+
+.list-unstyled .media.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .list-unstyled .media img {
     width: 450px;
     height: 450px;
     object-fit: cover;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.25s ease;
 }
 
 .list-unstyled .media-body {
     text-align: left;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.25s ease;
 }
 
 .list-unstyled .media-body h5,
 .list-unstyled .media-body p {
-    transition: color 0.5s ease;
+    transition: color 0.25s ease;
 }
 
 .list-unstyled .media:hover {
@@ -198,6 +210,146 @@ nav {
 .list-unstyled .media:hover .media-body h5,
 .list-unstyled .media:hover .media-body p {
     color: #fff;
+}
+
+@media (max-width: 701px) {
+    h5 {
+        font-size: 5vw;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 50%);
+        margin: 10;
+        padding: 10px 0;
+    }
+    .list-unstyled .media p {
+        display: none;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .list-unstyled .media {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        /* Adjust space between items if necessary */
+    }
+    .list-unstyled .media img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+    .list-unstyled .media-body {
+        width: 104%;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+
+
+/****** Map section***/
+
+.mrdetails {
+    width: 88%;
+    padding-top: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.mrdetails h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+}
+
+.mrdetails p {
+    color: #777;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px;
+}
+
+.mrdetails #map {
+    width: 75%;
+    left: 250px;
+}
+
+
+/***Contacting Section***/
+
+.contacting {
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contacting h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+.contacting p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.info_box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.info_box .infos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid white;
+}
+
+.info_box .infos {
+    margin-bottom: 10px;
+}
+
+.infos {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos i {
+    margin-bottom: 10px;
+}
+
+.infos h3 {
+    margin: 10px 0;
+}
+
+.infos p {
+    margin: 5px 0;
+}
+
+.infos .fab {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+@media (max-width: 701px) {
+    .info_box {
+        flex-direction: column;
+    }
 }
 
 
