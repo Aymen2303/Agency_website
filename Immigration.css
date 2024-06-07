@@ -254,10 +254,11 @@ nav {
 /****** Map section***/
 
 .mrdetails {
-    width: 88%;
-    padding-top: 25px;
+    width: 100%;
+    margin-top: 35px;
     text-align: center;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .mrdetails h2 {
@@ -277,6 +278,34 @@ nav {
 .mrdetails #map {
     width: 75%;
     left: 250px;
+    height: 600px;
+}
+
+@media (max-width: 701px) {
+    .map-text-container {
+        flex-direction: column;
+        align-items: center;
+        /* Center items horizontally */
+    }
+    .text-container {
+        order: -1;
+        /* Move text above the map */
+        margin-bottom: 20px;
+        /* Add some space between text and map */
+    }
+    .map-container {
+        display: flex;
+        justify-content: center;
+        /* Center the map horizontally */
+        align-items: center;
+        /* Center the map vertically */
+    }
+    #map {
+        max-width: 100%;
+        /* Ensure map doesn't exceed the viewport width */
+        height: 450px;
+        /* Adjust height as needed */
+    }
 }
 
 
@@ -390,4 +419,27 @@ footer p:last-child {
 footer p:last-child i {
     margin-right: 5px;
     /* Add spacing between the icon and text */
+}
+
+
+/****   Desgin spike, curve****/
+
+.spikes {
+    position: relative;
+    background: #2c3e50;
+    height: 50vh;
+}
+
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+    background-position: 0 0;
 }
