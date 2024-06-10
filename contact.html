@@ -9,16 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" />
-    <title>Agence Taous- Contact</title>
-
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <!-- Include map.js -->
-    <script src="map.js" defer></script>
-    <!-- Calling script -->
-    <script src="sliding.js" defer></script>
-
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Agence Taous - Contact</title>
+    <style>
+        #map {
+            height: 400px;
+            /* Adjust the height as needed */
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -51,7 +50,6 @@
             <h2>Notre Location</h2>
             <p>Nous sommes situés à la Cité 50 villas, à Boghni, Tizi-Ouzou, en Algérie. N'hésitez pas à nous rendre visite pour plus d'informations.</p>
             <p>Nos horaires d'ouverture sont de 9h à 17h, du lundi au vendredi. Nous sommes impatients de vous rencontrer !</p>
-
         </div>
         <div class="map-container">
             <div id="map"></div>
@@ -86,6 +84,10 @@
         <p>aimenLalaibia0@gmail.com</p>
         <p><i class="fa fa-copyright"></i> 2023 All rights reserved</p>
     </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="specificLocation.js" defer></script>
+    <script src="sliding.js" defer></script>
 </body>
 
 </html>

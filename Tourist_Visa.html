@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/TouristVisaStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Agence Taous - Visa de Voyage</title>
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <h1 id="header_text">Agence Taous</h1>
+        <nav>
+            <a href="./HomePage1.html">
+                <img src="./images/LOGO-FINAL-_1_.jpg" alt="Agency Logo" id="img_logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./HomePage1.html">Accueil</a></li>
+                    <li><a href="./Reservation.html" target="_blank">Réservation en ligne</a></li>
+                    <li><a href="./contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!---details section-->
+    <section class="details">
+        <h2>Services de Visa de Voyage</h2>
+        <p>Ici, nous vous proposons une liste de pays pour lesquels nous offrons des services de visa de voyage</p>
+        <ul class="list-unstyled">
+            <li class="media">
+                <img class="mr-3 img-fluid" src="/images/visaDocument.jpg" alt="image de demande de visa">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Assistance à la demande de visa</h5>
+                    <p>Nous vous aidons à préparer et soumettre votre demande de visa, en nous assurant que tous les documents requis sont en ordre.</p>
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3 img-fluid" src="/images/travel.jpg" alt="image de plan de voyage">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Plans de voyage personnalisés</h5>
+                    <p>Nous créons des plans de voyage personnalisés qui correspondent à vos besoins et à vos préférences, pour que votre voyage soit parfait.</p>
+                </div>
+            </li>
+            <li class="media">
+                <img class="mr-3 img-fluid" src="/images/hotels.jpg" alt="image d'hotels">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Réservations d'hotels</h5>
+                    <p>Nous vous aidons à trouver et réserver des hotels confortables et abordables dans votre destination de voyage.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="spikes"></section>
+    <!------ contacting section -->
+    <section class="contacting">
+        <h1>Contactez-nous</h1>
+        <p>Dans cette section vous trouverez toutes nos informations, notre équipe est toujours disponible pour vous aider!</p>
+        <div class="info_box">
+            <div class="infos">
+                <i class="fa fa-map-marker-alt fa-2x"></i>
+                <h3>Adresse</h3>
+                <p>Cité 50 villas, Boghni, Tizi-Ouzou, Algérie </p>
+            </div>
+            <div class="infos">
+                <i class="fa fa-phone fa-2x"></i>
+                <h3>Téléphone</h3>
+                <p>026.38.40.25</p>
+            </div>
+            <div class="infos">
+                <i class="fa fa-envelope fa-2x"></i>
+                <h3>E-mail</h3>
+                <p>taousagencytravel@gmail.com</p>
+            </div>
+            <div class="infos">
+                <i class="fa fa-thumbs-up fa-2x"></i>
+                <h3>Nous suivre</h3>
+                <a href="https://www.instagram.com/taous.agency/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!---   Footer--->
+    <footer>
+        <p>Developed by Lalaibia Aimen</p>
+        <p>aimenLalaibia0@gmail.com</p>
+        <p><i class="fa fa-copyright"></i> 2023 All rights reserved</p>
+    </footer>
+
+    <!-- Calling script -->
+    <script src="sliding.js" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
