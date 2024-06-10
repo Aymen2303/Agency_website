@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*** Header section ***/
+
+.header {
+    min-height: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("./images/travel_map_compass_123078_1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header_text {
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+#img_logo {
+    position: absolute;
+    margin-left: 1rem;
+    top: 10px;
+    width: 90px;
+    height: auto;
+    border-radius: 45%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 25px 12px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    #img_logo {
+        top: 10px;
+        left: 20px;
+        width: 90px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fas {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    .nav-links ul li:hover {
+        color: black;
+    }
+}
+
+@media (min-width: 701px) {
+    nav .fa-bars {
+        display: none;
+    }
+    nav .fa-times {
+        display: none;
+    }
+}
+
+
+/*** Details section ***/
+
+.details {
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.details h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+}
+
+.details p {
+    color: #777;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px;
+}
+
+
+/*** Offers section ***/
+
+.list-unstyled {
+    margin-top: 6vw;
+    display: inline-block;
+    width: 90%;
+}
+
+.list-unstyled .media {
+    align-items: center;
+    transition: background-color 0.5s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.25s ease-out;
+}
+
+.list-unstyled .media:nth-child(2n) {
+    transform: translateX(100%);
+}
+
+.list-unstyled .media.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.list-unstyled .media img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    transition: background-color 0.25s ease;
+}
+
+.list-unstyled .media-body {
+    text-align: left;
+    transition: background-color 0.25s ease;
+}
+
+.list-unstyled .media-body h5,
+.list-unstyled .media-body p {
+    transition: color 0.25s ease;
+}
+
+.list-unstyled .media:hover {
+    background-color: #ff7961;
+}
+
+.list-unstyled .media:hover .media-body h5,
+.list-unstyled .media:hover .media-body p {
+    color: #fff;
+}
+
+@media (max-width: 701px) {
+    h5 {
+        font-size: 5vw;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 50%);
+        margin: 10;
+        padding: 10px 0;
+    }
+    .list-unstyled .media p {
+        display: none;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .list-unstyled .media {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .list-unstyled .media img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+    .list-unstyled .media-body {
+        width: 104%;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+
+
+/*** Contact section ***/
+
+.contacting {
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contacting h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+.contacting p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.info_box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.info_box .infos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.infos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.infos i {
+    margin-bottom: 10px;
+}
+
+.infos h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.infos p {
+    font-size: 18px;
+    color: #777;
+}
+
+.infos a {
+    color: #f44336;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+@media (max-width: 701px) {
+    .info_box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .infos {
+        margin: 10px 0;
+    }
+}
+
+
+/*** Footer ***/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer i {
+    margin-right: 5px;
+}
